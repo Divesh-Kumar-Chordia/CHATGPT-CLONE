@@ -52,7 +52,7 @@ function chatStripe (isAi, value, uniqueId) {
       <div class="profile">
       <img
           src=${isAi ? bot: user}
-          alt=${isAi ? 'bot' : 'user'}
+          alt="${isAi ? 'bot' : 'user'}"
       />
       </div>
       <div class="message" id=${uniqueId}> ${value}</div>
@@ -79,7 +79,7 @@ const handleSubmit = async (e) =>{
   loader (messageDiv);
   
   //this function is used to send the prompt as json , via POST request to the server
-const response = await fetch('https://chatgptbydivesh.onrender.com', {
+const response = await fetch('https://chatgptbydivesh.onrender.com/', {
   method: 'POST',
   headers: {
   'Content-Type': 'application/json'
