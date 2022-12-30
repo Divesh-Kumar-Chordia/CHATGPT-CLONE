@@ -79,7 +79,7 @@ const handleSubmit = async (e) =>{
   loader (messageDiv);
   
   //this function is used to send the prompt as json , via POST request to the server
-const response = await fetch('http://localhost:5000', {
+const response = await fetch('https://chatgptbydivesh.onrender.com', {
   method: 'POST',
   headers: {
   'Content-Type': 'application/json'
