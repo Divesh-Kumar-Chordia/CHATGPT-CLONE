@@ -45,4 +45,4 @@ catch(error){
 }
 })
 
-app.listen(5000,() =>console.log('Server listening on port http://localhost:5000'));
+app.listen("https://chatgptbydivesh.onrender.com",() =>console.log('Server listening on port https://chatgptbydivesh.onrender.com'));
